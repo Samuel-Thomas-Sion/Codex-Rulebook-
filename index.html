@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Codex Rulebook</title>
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #05070a;
+    font-family: Arial;
+    color: #e6f1ff;
+  }
+
+  .wrap {
+    padding: 18px;
+  }
+
+  /* HEADER */
+  .title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff3b3b, #ff8c00, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 12px rgba(255,100,0,0.2);
+    margin-bottom: 20px;
+    animation: glow 3s infinite alternate;
+  }
+
+  @keyframes glow {
+    from { filter: brightness(1); }
+    to { filter: brightness(1.4); }
+  }
+
+  /* SECTION BOX */
+  .block {
+    margin-bottom: 14px;
+    padding: 14px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    border-left: 4px solid #00aaff;
+    box-shadow: 0 0 12px rgba(0,170,255,0.08);
+    animation: float 6s infinite ease-in-out;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(2px); }
+    100% { transform: translateY(0px); }
+  }
+
+  /* SECTION HEADERS */
+  .h {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #00aaff;
+  }
+
+  /* IMPORTANT TEXT COLORS */
+  .warn { color: #ff4d4d; }
+  .ok { color: #00ff99; }
+  .gold { color: #ffd700; }
+
+  /* DIVIDER */
+  .line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00aaff, transparent);
+    margin: 10px 0;
+  }
+
+  /* soft background energy */
+  body::before {
+    content: "";
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(255,80,80,0.08), transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(0,170,255,0.06), transparent 40%);
+    animation: drift 8s infinite alternate;
+    z-index: -1;
+  }
+
+  @keyframes drift {
+    from { transform: translateY(-10px); }
+    to { transform: translateY(10px); }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+  <div class="title">📜 PROTECTORS OF THE CODEX — OFFICIAL RULEBOOK</div>
+
+  <div class="block">
+    <div class="h">I. CORE PRINCIPLE</div>
+    This club is built on three pillars:<br>
+    <span class="ok">• Activity</span><br>
+    <span class="ok">• Progression</span><br>
+    <span class="ok">• Respect</span><br><br>
+    Every member must contribute to at least one.
+  </div>
+
+  <div class="block">
+    <div class="h">II. MEMBERSHIP EXPECTATIONS</div>
+    • Remain active regularly<br>
+    • Participate in at least one activity<br>
+    • Maintain respectful communication<br><br>
+    <span class="warn">Inactivity may lead to removal.</span>
+  </div>
+
+  <div class="block">
+    <div class="h">III. ACTIVITY REQUIREMENT</div>
+    Active means:<br>
+    • Club games OR<br>
+    • Chat participation OR<br>
+    • Event participation<br><br>
+    <span class="gold">Minimum: 1 action every 3–5 days</span>
+  </div>
+
+  <div class="block">
+    <div class="h">IV. RANKING SYSTEM</div>
+    Initiate → Keeper → Guardian → Warden → Grand Protector<br><br>
+    Promotions are earned through activity, contribution, and trust.
+  </div>
+
+  <div class="block">
+    <div class="h">V. RECRUITMENT SYSTEM</div>
+    • 5 successful invites → Admin (Provisional)<br>
+    • Must maintain activity<br>
+    • Spam invites ignored
+  </div>
+
+  <div class="block">
+    <div class="h">VI. AUTHORITY & ROLES</div>
+    • Super Admin — Restricted control<br>
+    • Admin — Events & moderation<br>
+    • Coordinator — Engagement support<br><br>
+    Authority is based on trust.
+  </div>
+
+  <div class="block">
+    <div class="h">VII. EVENTS & MATCHES</div>
+    • Daily chess matches<br>
+    • Tournament expansion system<br><br>
+    Members are expected to participate.
+  </div>
+
+  <div class="block">
+    <div class="h">VIII. CODE OF CONDUCT</div>
+    <span class="warn">No toxicity, spam, cheating, or abuse.</span><br>
+    Violations may lead to removal.
+  </div>
+
+  <div class="block">
+    <div class="h">IX. ACTIVITY SYSTEM</div>
+    Tracks:<br>
+    • Participation<br>
+    • Contribution<br>
+    • Consistency<br><br>
+    Rewards:<br>
+    • Rank promotion<br>
+    • Recognition<br>
+    • Leadership opportunities
+  </div>
+
+</div>
+
+</body>
+</html>
